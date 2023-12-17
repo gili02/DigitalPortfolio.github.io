@@ -1,0 +1,190 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+    margin: 0;
+    position: relative;
+    color: #fff;
+}
+
+body::before {
+    content: "";
+    background-image: url('NightCity.jpg');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.box1 {
+    width: 20%;
+    background-color: #000080;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.profile {
+    width: 58%;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin-top: 10%;
+}
+
+.box1 h2 {
+    font-size: 1.4em;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.box1 hr{
+    width: 80%;
+    margin-top: 1%;
+    line-height: 0%;
+}
+
+.box1 p {
+    margin-top: 10%;
+    font-size: 1.1em;
+    line-height: 4em; 
+    font-family: Arial;
+}
+
+.box1 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 30em;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 0.6em 1.5em; 
+    transition: 0.5s;
+    background: #fff;
+    color: #000;
+}
+
+.box1 a:hover {
+    background: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 20px var(--clr);
+}
+
+.B1portfolio {
+    position: fixed;
+    top: 6%;
+    left: 60%;
+    transform: translateX(-50%);
+    border: solid white 1px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 14vh; 
+    width: 65%;
+}
+
+.B1portfolio h1 {
+    font-weight: bold;
+    font-family: "tahoma";
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: white;
+    margin: 0; 
+    top: 0;
+}
+
+.B2 {
+    position: fixed;
+    top: 40%;
+    left: 59%; 
+    transform: translateX(-50%);
+    align-items: center;
+    text-align: justify;
+    max-width: 80%; 
+}
+
+.B2 h1 {
+    font-weight: bold;
+    font-family: "Arial";
+    font-size: 50px;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 25px; 
+    border-radius: 10px;
+    color: black;
+}
+
+
+@media screen and (max-width: 700px) {
+    body::before {
+        background-size: contain;
+    }
+
+    .profile {
+        width: 68%;
+        border-radius: 60%;
+        border: 3px solid black;
+        margin-top: 50%;
+    }
+
+    .box1 h2 {
+        font-size: 1em;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+    .box1 p {
+        margin-top: 20%;
+    }
+
+    .box1 a {
+        font-size: 0.8em;
+        padding: 0.5em 1em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body::before {
+        background-size: contain;
+    }
+
+    .profile {
+        width: 68%;
+        border-radius: 60%;
+        border: 3px solid black;
+        margin-top: 50%;
+    }
+
+    .box1 h2 {
+        font-size: 0.9em;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+    .box1 p {
+        margin-top: 20%;
+    }
+
+    .box1 a {
+        font-size: 0.6em;
+        padding: 0.5em 1em;
+    }
+}
+
